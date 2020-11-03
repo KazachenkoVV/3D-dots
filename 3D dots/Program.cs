@@ -19,9 +19,9 @@ namespace _3D_dots
             Console.WriteLine($"Точка - point2 имеет координаты:");
             point2.DispleyPoint();
 
-            Console.WriteLine($"Расстояние между точками point1 и point2 равно {point1.DistanceBetweenTwoPoints(point2):f4U}\n");
+            Console.WriteLine($"Расстояние между точками point1 и point2 равно {point1.DistanceBetweenTwoPoints(point2):f4}\n");
 
-            Console.WriteLine("Введите координаты точки point3");
+            Console.WriteLine("Введите координаты точки point3:");
             var coordinates = inputDot();
             Point point3 = new Point(x: coordinates.Item1, y: coordinates.Item2, z: coordinates.Item3);
             Console.WriteLine($"Точка - point3 имеет координаты:");
@@ -44,15 +44,13 @@ namespace _3D_dots
                         Console.Write($"Координата {dimensions[i]} = ");
                         ok = Double.TryParse(Console.ReadLine(), out valueDim[i]);
                         if (ok == false)
-                            Console.WriteLine("Нужно ввести число! Повторите, пожалуйста ввод!");
+                            Console.WriteLine("Нужно ввести число! Повторите, пожалуйста, ввод!");
                     } while (ok == false);
                 }
 
                 Console.WriteLine();
                 return (valueDim[0], valueDim[1], valueDim[2]);
             }
-
-
         }
     }
 }

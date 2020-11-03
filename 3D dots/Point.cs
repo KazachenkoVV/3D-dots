@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _3D_dots
 {
@@ -40,6 +38,5 @@ namespace _3D_dots
             }
             return dist;
         }
-
     }
 }
